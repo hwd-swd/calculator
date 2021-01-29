@@ -1,0 +1,118 @@
+/* reset default margin and padding */
+* { 
+    margin:0;
+    border:0;
+    font-size:100%;
+    outline: 0;
+    padding:0;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.display{
+    background-color: green;
+    width:40vw;
+    height:10vw;
+    
+    margin:0 auto;
+    text-align: right;
+    font-size: 300%;
+}
+
+.buttons{
+    display:grid;
+    width:40vw;
+    height:auto;
+    margin: 0  auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    grid-template-areas: "add subtract multiply divide"
+    "seven eight nine equals"
+    "four five six equals"
+    "one two three equals"
+    "toggle zero dot equals";
+}
+
+.button{
+    margin:0;
+    background-color:yellow;
+    height:10vw;
+    width:10vw;
+    user-select: none;
+    font-size:200%;
+    text-align:center;
+    padding:auto;
+    
+}
+
+.button:active{
+    background-color: red;
+}
+
+#one{
+    grid-area:one;    
+}
+
+#two{
+    grid-area:two;    
+}
+
+#three{
+    grid-area:three;    
+}
+
+#four{
+    grid-area:four;
+}
+
+#five{
+    grid-area:five;
+}
+
+#six{
+    grid-area:six;
+}
+
+#seven{
+    grid-area:seven;
+}
+
+#eight{
+    grid-area:eight;
+}
+
+#nine{
+    grid-area:nine;
+}
+
+#zero{
+    grid-area:zero;
+}
+
+#add{
+    grid-area:add;
+}
+
+#subtract{
+    grid-area:subtract;
+}
+
+#multiply{
+    grid-area:multiply;
+}
+
+#divide{
+    grid-area:divide;
+}
+
+#equals{
+    grid-area:equals;
+    height:40vw;
+}
+
