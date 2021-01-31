@@ -31,7 +31,8 @@ h1{
 footer{
     background-color: var(--lightBlue);
     border-top: solid 1px black;
-    padding: .5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
     position: absolute;
     bottom: 0;
     width:100%;
