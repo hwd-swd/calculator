@@ -5,24 +5,45 @@
     font-size:100%;
     outline: 0;
     padding:0;
+    font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --pink: #eebeb0;
+    --lightBlue: #b7d8eb;
+    --darkBlue: #243746;
+    --white: #f0ece9;
 }
 
 .container{
+    position: relative;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5rem auto;
-
+    min-height: 100vh;
 }
 
+h1{
+    text-align: center;
+    font-size: 400%;
+}
 
+footer{
+    background-color: var(--lightBlue);
+    border-top: solid 1px black;
+    padding: .5rem;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    text-align: right;
+}
 
 .buttons{
     display:grid;
     background-color: black;
-    margin: 0  auto;
-    grid-template-columns: repeat(4,150px);
-    grid-template-rows: repeat(6,150px);
+    margin: 1rem  auto;
+    grid-template-columns: repeat(4,120px);
+    grid-template-rows: repeat(6,120px);
     grid-gap: 2px;
     grid-template-areas: 
     "display display display display"
@@ -41,22 +62,36 @@
     grid-area:display;
     font-size: 300%;
     user-select: none;
-    background-color: green;
+    background-color: var(--white);
     padding: 1rem;
 }
 
 .button{
-    background-color:gray;
+    background-color:var(--lightBlue);
     display:flex;
     user-select: none;
     text-align: center;
-    font-size:200%; 
+    font-size:250%; 
     align-items: center;
     justify-content: center;
 }
 
+.operator{
+    background-color: var(--darkBlue);
+    color: var(--white);
+}
+
+.other{
+    background-color: var(--darkBlue);
+    color: var(--white);
+}
+
 .button:active{
-    background-color: red;
+    background-color: var(--pink);
+}
+
+.button:hover{
+    font-size: 270%;
 }
 
 #one{

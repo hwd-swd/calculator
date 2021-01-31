@@ -15,8 +15,16 @@ function multiply(a,b){
 }
 
 function divide(a,b){
-    ans = a/b;
-    return +ans.toFixed(7).toString()
+    if (b.toString() == '0'){
+        alert('no dividing by 0 pls')
+        ans = a/b;
+        return +ans.toFixed(7).toString()
+    }
+    else{
+        ans = a/b;
+        return +ans.toFixed(7).toString()
+    }
+    
 }
 
 function exp(a,b){
